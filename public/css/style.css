@@ -1,6 +1,10 @@
 /* Variables personalisadas. */
 :root {
     --green-base: #00c040;
+    --white-base: #ffffff;
+    --black-base: #000000;
+    --white-base-alfa-75: rgba(255, 255, 255, 0.75);
+    --black-base-alfa-25: rgba(0, 0, 0, 0.25);
 }
 
 /* Estilos para el menù de ofertas emergente. */
@@ -19,73 +23,112 @@
     height: 500px !important;
 }
 
-/* Reglas para aplicar efecto defuminado. */
+/* Reglas para aplicar efecto defuminado blanco. */
 .backdrop-filter {
-    background-color: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(25px);
+    background-color: var(--white-base-alfa-75) !important;
+    backdrop-filter: blur(25px) !important;
 }
 
+/* Regla para fondos negros con transparencia. */
 .backdrop-filter-dark {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: var(--black-base-alfa-25) !important;
 }
 
+/* Fondo verde base */
+.bg-green-base {
+    background-color: var(--green-base) !important;
+}
+
+/* Reglas para texto de color verde base. */
 .text-green-base {
     color: var(--green-base) !important;
 }
 
+/* Reglas para ajustar la imagenes de los elementos del encabezado. */
 .header-item {
     background-image: url("/public/img/header/header-1.jpg");
     background-size: cover !important;
 }
 
+/* Sobreescritura de los estilos bootstrap para el botón de anterior en carousel. */
 .carousel-control-prev {
     width: 50px !important;
 }
 
+/* Sobreescritura de los estilos bootstrap para el botón de siguiente en carousel. */
 .carousel-control-next {
     width: 50px !important;
 }
 
+/* Regla para titulos por arriba de las imagenes de encabezado de los productos. */
 .title-item {
     font-size: 40px !important;
 }
 
+/* Reglas para el botón de compara en el encabezado. */
 .button-buy-item {
-    border: solid 1px white !important;
-    color: white !important;
+    border: solid 1px var(--white-base) !important;
+    color: var(--white-base) !important;
 }
 
+/* Efecto hover del botón que se encuentra en el encabezado de los productos. */
 .button-buy-item:hover {
-    border: solid 1px white !important;
-    background-color: white;
-    color: black !important;
+    border: solid 1px var(--white-base) !important;
+    background-color: var(--white-base);
+    color: var(--black-base) !important;
 }
 
+/* Reglas para precio flotante en encabezado de cada articulo. */
 .badge-custom-price {
     width: 80px;
     height: 80px;
     background-color: var(--green-base);
 }
 
+/* Relleno para en encabezado principal. */
 .padding-header {
     padding-left: 200px;
     padding-right: 200px;
 }
 
+/* Reglas para el relleno de cada articulo del encabezado. */
 .container-items-header {
     width: fit-content;
     padding-top: 100px;
 }
 
+/* Adapta el texto en diferentes tamaños de pantalla. */
 .text-responsive {
     font-size: 16px !important;
 }
 
+/* Regla para definir el alto del contenedor del carrusel de productos más vendidos. */
 .carousel-container-the-most-trendy {
-    background-color: greenyellow !important;
-    height: 250px !important;
+    height: 400px !important;
 }
 
+/* Tamaño de fuente para el precio de cada tarjeta de lo más vendido. */
+.card-price {
+    font-size: 16px !important;
+}
+
+/* Tamaño de estrellas del producto. */
+.stars {
+    font-size: 16px !important;
+}
+
+/* Tamaño fijo de altura del contenedor de imagen de los productos más vendidos. */
+.card-header-img {
+    height: 280px !important;
+}
+
+/* Divisor vertical para precio y número de estrellas. */
+.card-horizontal-divider::before {
+    content: "" !important;
+    border-right: solid 1px var(--black-base);
+}
+
+/* Las clase y elementos con la pseudo clase enfoque son para quitar borde y sombreado. */
 .btn:focus {
     border: none !important;
     box-shadow: none !important;
@@ -116,8 +159,20 @@ input:focus {
         padding-right: 50px;
     }
 
+    .card-the-most-trendy {
+        width: 50px !important;
+    }
+
+    .card-price {
+        font-size: 10px !important;
+    }
+    
+    .stars {
+        font-size: 10px !important;
+    }
+
     body {
-        background-color: red;
+        /* background-color: red; */
     }
 }
 
@@ -135,6 +190,14 @@ input:focus {
     .padding-header {
         padding-left: 100px;
         padding-right: 100px;
+    }
+
+    .card-price {
+        font-size: 10px !important;
+    }
+    
+    .stars {
+        font-size: 10px !important;
     }
 
     body {
@@ -156,9 +219,16 @@ input:focus {
         padding-left: 120px;
         padding-right: 120px;
     }
+    .card-price {
+        font-size: 12px !important;
+    }
+    
+    .stars {
+        font-size: 12px !important;
+    }
 
     body {
-        background-color: yellow;
+        /* background-color: yellow; */
     }
 }
 
@@ -177,8 +247,16 @@ input:focus {
         padding-right: 150px;
     }
 
+    .card-price {
+        font-size: 14px !important;
+    }
+    
+    .stars {
+        font-size: 14px !important;
+    }
+
     body {
-        background-color: green;
+        /* background-color: green; */
     }
 }
 
@@ -197,8 +275,16 @@ input:focus {
         padding-right: 170px;
     }
 
+    .card-price {
+        font-size: 16px !important;
+    }
+    
+    .stars {
+        font-size: 16px !important;
+    }
+
     body {
-        background-color: blue;
+        /* background-color: blue; */
     }
 }
 
@@ -218,7 +304,15 @@ input:focus {
         padding-right: 200px;
     }
 
+    .card-price {
+        font-size: 16px !important;
+    }
+    
+    .stars {
+        font-size: 16px !important;
+    }
+
     body {
-        background-color: black;
+        /* background-color: black; */
     }
 }
