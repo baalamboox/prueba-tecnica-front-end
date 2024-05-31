@@ -1,0 +1,224 @@
+/* Variables personalisadas. */
+:root {
+    --green-base: #00c040;
+}
+
+/* Estilos para el menù de ofertas emergente. */
+.off-menu {
+    background-color: var(--green-base) !important;
+    font-size: 14px !important;
+}
+
+/* Reglas para aplicar fondo dinamico al encabezado principal. */
+.carousel-container {
+    background-image: url("/public/img/header/header-1.jpg");
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    height: 500px !important;
+}
+
+/* Reglas para aplicar efecto defuminado. */
+.backdrop-filter {
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(25px);
+}
+
+.backdrop-filter-dark {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.text-green-base {
+    color: var(--green-base) !important;
+}
+
+.header-item {
+    background-image: url("/public/img/header/header-1.jpg");
+    background-size: cover !important;
+}
+
+.carousel-control-prev {
+    width: 50px !important;
+}
+
+.carousel-control-next {
+    width: 50px !important;
+}
+
+.title-item {
+    font-size: 40px !important;
+}
+
+.button-buy-item {
+    border: solid 1px white !important;
+    color: white !important;
+}
+
+.button-buy-item:hover {
+    border: solid 1px white !important;
+    background-color: white;
+    color: black !important;
+}
+
+.badge-custom-price {
+    width: 80px;
+    height: 80px;
+    background-color: var(--green-base);
+}
+
+.padding-header {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.container-items-header {
+    width: fit-content;
+    padding-top: 100px;
+}
+
+.text-responsive {
+    font-size: 16px !important;
+}
+
+.carousel-container-the-most-trendy {
+    background-color: greenyellow !important;
+    height: 250px !important;
+}
+
+.btn:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+button:focus {
+    box-shadow: none !important;
+}
+
+input:focus {
+    box-shadow: none !important;
+    border: solid 1px var(--green-base) !important;
+}
+
+/* Media query para dispositivos muy pequeños (Móviles). */
+@media (min-width: 0px) {
+
+    .off-menu {
+        font-size: 10px !important;
+    }
+
+    .text-responsive {
+        font-size: 6px !important;
+    }
+
+    .padding-header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    body {
+        background-color: red;
+    }
+}
+
+/* Media query para dispositivos medianamente pequeños (Móviles y Tabletas). */
+@media (min-width: 576px) {
+
+    .off-menu {
+        font-size: 12px !important;
+    }
+
+    .text-responsive {
+        font-size: 10px !important;
+    }
+
+    .padding-header {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    body {
+        /* background-color: blue; */
+    }
+}
+
+/* Media query para dispositivos medianos (Móviles y Tabletas). */
+@media (min-width: 768px) {
+    .off-menu {
+        font-size: 14px !important;
+    }
+
+    .text-responsive {
+        font-size: 12px !important;
+    }
+
+    .padding-header {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    body {
+        background-color: yellow;
+    }
+}
+
+/* Media query para dispositivos medianamente grandes (Móviles, Tabletas y Laptops). */
+@media (min-width: 992px) {
+    .off-menu {
+        font-size: 14px !important;
+    }
+
+    .text-responsive {
+        font-size: 12px !important;
+    }
+
+    .padding-header {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    body {
+        background-color: green;
+    }
+}
+
+/* Media query para dispositivos grandes (PC's y Laptops). */
+@media (min-width: 1200px) {
+    .off-menu {
+        font-size: 14px !important;
+    }
+
+    .text-responsive {
+        font-size: 14px !important;
+    }
+
+    .padding-header {
+        padding-left: 170px;
+        padding-right: 170px;
+    }
+
+    body {
+        background-color: blue;
+    }
+}
+
+/* Media query para dispositivos muy grandes. */
+@media (min-width: 1400px) {
+
+    .off-menu {
+        font-size: 14px !important;
+    }
+
+    .text-responsive {
+        font-size: 16px !important;
+    }
+
+    .padding-header {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    body {
+        background-color: black;
+    }
+}
