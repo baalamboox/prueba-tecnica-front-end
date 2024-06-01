@@ -3,6 +3,7 @@
     --green-base: #00c040;
     --white-base: #ffffff;
     --black-base: #000000;
+    --gray-base: #212529;
     --white-base-alfa-75: rgba(255, 255, 255, 0.75);
     --black-base-alfa-75: rgba(0, 0, 0, 0.75);
     --black-base-alfa-25: rgba(0, 0, 0, 0.25);
@@ -173,6 +174,32 @@
     font-size: 12px !important;
     backdrop-filter: blur(100px);
 }
+
+/* Personalización de las tarjetas donde parencen las noticias. */
+.card-news:hover {
+    background-color: var(--gray-base);
+    color: var(--white-base);
+}
+
+.card-news:hover .comments {
+    background-color: var(--gray-base) !important;
+    color: var(--green-base) !important;
+}
+
+.card-news:hover .breadcrumb-item {
+    color: var(--white-base) !important;
+}
+
+.card-news:hover .breadcrumb-item::before {
+    color: var(--white-base) !important;
+}
+
+.breadcrumb-item, .breadcrumb-item::before {
+    font-size: 10px !important;
+    color: var(--gray-base) !important;
+}
+
+
 
 /* Las clase y elementos con la pseudo clase enfoque son para quitar borde y sombreado. */
 .btn:focus {
