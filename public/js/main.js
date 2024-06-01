@@ -31,7 +31,7 @@ const plantillaNoticia = `
     </div>
 `;
 
-const swiper01 = new Swiper('.carousel-the-most-trendy', {
+const carruselLoMasVendido = new Swiper('.carousel-the-most-trendy', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 4,
@@ -68,7 +68,45 @@ const swiper01 = new Swiper('.carousel-the-most-trendy', {
     }
 });
 
-// const 
+const carruselMarcas = new Swiper(".carousel-brands", {
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+        delay: 5000,
+    },
+    slidesPerView: 9,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.brands-button-next',
+        prevEl: '.brands-button-prev'
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 5,
+            spaceBetween: 20
+        },
+        576: {
+            slidesPerView: 5,
+            spaceBetween: 20
+        },
+        768: {
+            slidesPerView: 7,
+            spaceBetween: 20
+        },
+        992: {
+            slidesPerView: 9,
+            spaceBetween: 20
+        },
+        1200: {
+            slidesPerView: 9,
+            spaceBetween: 20
+        },
+        1400: {
+            slidesPerView: 9,
+            spaceBetween: 20
+        }
+    }
+}); 
 
 const iconosBanderas = {
     "es": "🇪🇦",
