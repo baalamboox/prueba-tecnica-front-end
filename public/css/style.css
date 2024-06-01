@@ -4,6 +4,7 @@
     --white-base: #ffffff;
     --black-base: #000000;
     --white-base-alfa-75: rgba(255, 255, 255, 0.75);
+    --black-base-alfa-75: rgba(0, 0, 0, 0.75);
     --black-base-alfa-25: rgba(0, 0, 0, 0.25);
 }
 
@@ -154,6 +155,23 @@
 .off-recomended-circle-price {
     width: 80px !important;
     height: 80px !important;
+}
+
+/* Estilos para el precio de ofertas especiales. */
+.special-offer-card-price {
+    font-size: 16px !important;
+}
+
+/* Estilos para el estrellas de ofertas especiales. */
+.special-offer-stars {
+    font-size: 16px !important;
+}
+
+/* Estilos para personalizar la cuenta regresiva de ofertas especiales.  */
+.days, .hours, .minutes, .seconds {
+    background-color: var(--black-base-alfa-75) !important;
+    font-size: 12px !important;
+    backdrop-filter: blur(100px);
 }
 
 /* Las clase y elementos con la pseudo clase enfoque son para quitar borde y sombreado. */
