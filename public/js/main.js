@@ -31,7 +31,7 @@ const plantillaNoticia = `
     </div>
 `;
 
-const swiper = new Swiper('.carousel-the-most-trendy', {
+const swiper01 = new Swiper('.carousel-the-most-trendy', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 4,
@@ -67,6 +67,8 @@ const swiper = new Swiper('.carousel-the-most-trendy', {
         }
     }
 });
+
+// const 
 
 const iconosBanderas = {
     "es": "🇪🇦",

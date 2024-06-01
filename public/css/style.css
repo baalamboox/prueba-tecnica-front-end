@@ -199,7 +199,21 @@
     color: var(--gray-base) !important;
 }
 
+/* Estilos para la sección de testimonios. */
+.container-testimonials {
+    height: 350px !important;
+    padding-right: 100px !important;
+    padding-left: 100px !important;
+}
 
+.testimonials-padding {
+    padding-right: 100px !important;
+    padding-left: 100px !important;
+}
+
+.testimonials-pragraph {
+    font-size: 16px !important;
+}
 
 /* Las clase y elementos con la pseudo clase enfoque son para quitar borde y sombreado. */
 .btn:focus {
@@ -244,6 +258,23 @@ input:focus {
         font-size: 10px !important;
     }
 
+    .container-testimonials {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    
+    .testimonials-padding {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    
+    .testimonials-pragraph {
+        font-size: 12px !important;
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+    }
+    
+
     body {
         /* background-color: red; */
     }
@@ -273,6 +304,20 @@ input:focus {
         font-size: 10px !important;
     }
 
+    .container-testimonials {
+        padding-right: 50px !important;
+        padding-left: 50px !important;
+    }
+    
+    .testimonials-padding {
+        padding-right:25px !important;
+        padding-left: 25px !important;
+    }
+    
+    .testimonials-pragraph {
+        font-size: 14px !important;
+    }
+
     body {
         /* background-color: blue; */
     }
@@ -298,6 +343,20 @@ input:focus {
     
     .stars {
         font-size: 12px !important;
+    }
+
+    .container-testimonials {
+        padding-right: 75px !important;
+        padding-left: 75px !important;
+    }
+    
+    .testimonials-padding {
+        padding-right: 50px !important;
+        padding-left: 50px !important;
+    }
+    
+    .testimonials-pragraph {
+        font-size: 16px !important;
     }
 
     body {
@@ -328,6 +387,20 @@ input:focus {
         font-size: 14px !important;
     }
 
+    .container-testimonials {
+        padding-right: 100px !important;
+        padding-left: 100px !important;
+    }
+    
+    .testimonials-padding {
+        padding-right: 50px !important;
+        padding-left: 50px !important;
+    }
+    
+    .testimonials-pragraph {
+        font-size: 16px !important;
+    }
+
     body {
         /* background-color: green; */
     }
@@ -353,6 +426,20 @@ input:focus {
     }
     
     .stars {
+        font-size: 16px !important;
+    }
+
+    .container-testimonials {
+        padding-right: 100px !important;
+        padding-left: 100px !important;
+    }
+    
+    .testimonials-padding {
+        padding-right: 50px !important;
+        padding-left: 50px !important;
+    }
+    
+    .testimonials-pragraph {
         font-size: 16px !important;
     }
 
@@ -382,6 +469,20 @@ input:focus {
     }
     
     .stars {
+        font-size: 16px !important;
+    }
+
+    .container-testimonials {
+        padding-right: 100px !important;
+        padding-left: 100px !important;
+    }
+    
+    .testimonials-padding {
+        padding-right: 50px !important;
+        padding-left: 50px !important;
+    }
+    
+    .testimonials-pragraph {
         font-size: 16px !important;
     }
 
