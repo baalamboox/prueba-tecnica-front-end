@@ -1,16 +1,21 @@
+// Selección de los elementos para la lista de idiomas.
 const contenedorBandera = document?.querySelector("#contenedorBandera");
 const listaIdiomas = document?.querySelector("#listaIdiomas");
 
+// Selección de los elementos para la busqueda.
 const botonBuscar = document?.querySelector("#botonBuscar");
 const campoBuscar = document?.querySelector("#campoBuscar");
 
+// Seleción de los elementos del carrusel en encabezado principal.
 const carrusel = document?.querySelector("#carouselExampleAutoplaying");
 const articuloCarrusel = document?.querySelectorAll(".header-item");
 const contenedorCarrusel = document?.querySelector(".carousel-container");
 
+// Selección de los elementos relacionados con la sección de noticias.
 const seccionNoticias = document?.querySelector("#seccionNoticias");
 const botonMostrarTodas = document?.querySelector("#mostrarTodas");
 
+// Plantilla de noticia para agregar cada vez que se da clic en el boton mostrar más noticias.
 const plantillaNoticia = `
     <div class="col">
         <div class="card p-4 rounded-0 border-0 card-news">
@@ -31,6 +36,7 @@ const plantillaNoticia = `
     </div>
 `;
 
+// Configuraciones de los carrusel con uso de Swiper.
 const carruselLoMasVendido = new Swiper('.carousel-the-most-trendy', {
     direction: 'horizontal',
     loop: true,
@@ -108,6 +114,7 @@ const carruselMarcas = new Swiper(".carousel-brands", {
     }
 }); 
 
+// Iconos de banderas por país.
 const iconosBanderas = {
     "es": "🇪🇦",
     "en": "🇺🇸",
@@ -117,8 +124,10 @@ const iconosBanderas = {
     "pt": "🇵🇹"
 };
 
-const fondoArticulosEncabezado = ["header-1.jpg", "header-2.jpg", "header-3.jpg"];
+// Fondos del encabezado principal.
+const fondoArticulosEncabezado = ["header-1.webp", "header-2.webp", "header-3.webp"];
 
+// Seccón de eventos a cada elementos.
 window.onload = () => {
     campoBuscar.hidden = true;
 }

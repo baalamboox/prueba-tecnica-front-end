@@ -17,7 +17,7 @@
 
 /* Reglas para aplicar fondo dinamico al encabezado principal. */
 .carousel-container {
-    background-image: url("/public/img/header/header-1.jpg");
+    background-image: url("/public/img/header/header-1.webp");
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -48,7 +48,7 @@
 
 /* Reglas para ajustar la imagenes de los elementos del encabezado. */
 .header-item {
-    background-image: url("/public/img/header/header-1.jpg");
+    background-image: url("/public/img/header/header-1.webp");
     background-size: cover !important;
 }
 
@@ -254,8 +254,48 @@
     color: var(--green-base) !important;
 }
 
-.copyright {
+/* Estilos para la sección del pie de página. */
+.product-tags {
+    width: 45px !important;
+    height: 20px !important;
+    font-size: 10px !important;
+    border-radius: 4px !important;
+}
+
+.footer-container-product-tags {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 0px;
+    max-width: 200px !important;
+}
+
+.footer-title {
+    font-size: 16px !important;
+}
+
+.footer-about {
+    width: 250px !important;
+}
+
+.footer-about-paragraph {
+    font-size: 13px !important;
+}
+
+.footer-about-ref {
+    font-size: 13px !important;
+}
+
+.footer-links-list {
     font-size: 12px !important;
+    line-height: 20px !important;
+}
+
+.footer-links-list-item:hover {
+    color: var(--green-base) !important;
+}
+
+.copyright {
+    font-size: 13px !important;
 }
 
 /* Las clase y elementos con la pseudo clase enfoque son para quitar borde y sombreado. */
