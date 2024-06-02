@@ -229,6 +229,35 @@
     font-weight: bolder;
 }
 
+/* Estilos para la sección de más información. */
+.more-info-container {
+    height: 80px !important;
+}
+
+.text-more-info {
+    font-size: 11px !important;
+}
+
+.more-info-container:hover {
+    background-color: var(--gray-base) !important;
+}
+
+.more-info-container:hover .more-info-title {
+    color: var(--white-base) !important;
+}
+
+.more-info-container:hover .text-more-info {
+    color: var(--white-base) !important;
+}
+
+.more-info-container:hover .link-more-info {
+    color: var(--green-base) !important;
+}
+
+.copyright {
+    font-size: 12px !important;
+}
+
 /* Las clase y elementos con la pseudo clase enfoque son para quitar borde y sombreado. */
 .btn:focus {
     border: none !important;
