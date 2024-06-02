@@ -141,8 +141,8 @@ botonBuscar.addEventListener("click", () => {
 });
 
 carrusel.addEventListener("slide.bs.carousel", (event) => {
-    contenedorCarrusel.style.backgroundImage = `url("/public/img/header/${fondoArticulosEncabezado[event.to]}")`;
-    articuloCarrusel[event.to].style.backgroundImage = `url("/public/img/header/${fondoArticulosEncabezado[event.to]}")`;
+    contenedorCarrusel.style.backgroundImage = `url("./public/img/header/${fondoArticulosEncabezado[event.to]}")`;
+    articuloCarrusel[event.to].style.backgroundImage = `url("./public/img/header/${fondoArticulosEncabezado[event.to]}")`;
 });
 
 botonMostrarTodas.addEventListener('click', () => {

@@ -17,7 +17,7 @@
 
 /* Reglas para aplicar fondo dinamico al encabezado principal. */
 .carousel-container {
-    background-image: url("/public/img/header/header-1.webp");
+    background-image: url("../../public/img/header/header-1.webp");
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -48,7 +48,7 @@
 
 /* Reglas para ajustar la imagenes de los elementos del encabezado. */
 .header-item {
-    background-image: url("/public/img/header/header-1.webp");
+    background-image: url("../../public/img/header/header-1.webp");
     background-size: cover !important;
 }
 
@@ -356,11 +356,6 @@ input:focus {
         padding-left: 60px !important;
         padding-right: 60px !important;
     }
-    
-
-    body {
-        /* background-color: red; */
-    }
 }
 
 /* Media query para dispositivos medianamente pequeños (Móviles y Tabletas). */
@@ -400,10 +395,6 @@ input:focus {
     .testimonials-pragraph {
         font-size: 14px !important;
     }
-
-    body {
-        /* background-color: blue; */
-    }
 }
 
 /* Media query para dispositivos medianos (Móviles y Tabletas). */
@@ -440,10 +431,6 @@ input:focus {
     
     .testimonials-pragraph {
         font-size: 16px !important;
-    }
-
-    body {
-        /* background-color: yellow; */
     }
 }
 
@@ -483,10 +470,6 @@ input:focus {
     .testimonials-pragraph {
         font-size: 16px !important;
     }
-
-    body {
-        /* background-color: green; */
-    }
 }
 
 /* Media query para dispositivos grandes (PC's y Laptops). */
@@ -524,10 +507,6 @@ input:focus {
     
     .testimonials-pragraph {
         font-size: 16px !important;
-    }
-
-    body {
-        /* background-color: blue; */
     }
 }
 
@@ -567,9 +546,5 @@ input:focus {
     
     .testimonials-pragraph {
         font-size: 16px !important;
-    }
-
-    body {
-        /* background-color: black; */
     }
 }
